@@ -1,0 +1,299 @@
+
+/* letras font-family: 'Lato', sans-serif;
+font-family: 'Righteous', cursive; */
+
+ *{
+    margin:0;
+    padding: 0;
+ }
+body{
+    font-family:'Lato', sans-serif
+
+}
+
+ h1{
+    color:orange;
+    font-size: 40px;
+   text-align: center;
+}
+.parrafoQuienesSomos{
+    font-size: 15px;
+}
+
+
+.subtitulo{
+    margin: 40px 50px 40px 50px;
+}
+.principio{
+    position: relative;
+}
+
+.principio__texto{
+    color: rgb(235, 246, 255);
+  
+}
+    
+    
+ 
+
+
+/* Pagina Index */
+
+    
+    
+.headerGeneral{
+    background-color: rgb(233, 80, 19);
+    position: sticky;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+   }
+
+.subtitulo-index{
+    text-align: center;
+}   
+#box1{
+    width: 100%;
+    
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+    background-image: url(./fotos/niñoseneltransporte.jpg);
+   
+    
+    
+}
+.logo{
+    display: flex;
+    justify-content:space-around;
+  
+} 
+ 
+
+
+   
+
+
+#fondo{
+    background-color: #e4e2dcfb;
+
+}
+
+h2{
+ 
+    color:orange;
+  
+    font-size: 30px;
+ }
+
+.principio__video{
+    margin: 0 30px 10px 50px;
+    padding: 30px 30px 30px 30px;
+   width: 800px;
+    height: 300px;
+    display: inline;
+    background-color: coral;
+}
+
+nav ul li a{
+    color:black;
+    text-decoration: none;
+   
+    }
+    
+
+
+.cabecera__lista__item {
+
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+}
+
+
+/*termina index*/
+
+
+/* formulario */
+.contenedorFormulario{
+    color:orange;
+    background-color: dimgray;
+    
+}
+.tabla{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    height: 250px;
+}
+
+/* Partes de contacto */
+.subtitulo__contacto{
+    text-align: center;
+}
+.tabla{
+    display: flex;
+    
+}
+.tabla__fila{
+  align-items: center;
+}
+
+/* esto es de las imagenes de quienes-somos */
+
+#seccion1{
+    display: flex;
+   flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 400px;
+
+}
+.seccion1__fotos{
+    width:170px;
+    height: 170px;
+    margin: 0px 100px 30px 100px;
+    border-radius: 100%;
+    
+}
+#seccion2 {
+    width: 750px;
+    height: 200px;
+    
+}
+
+
+.subtituloPlantilla{
+    text-align: center;
+    font-size: 30px;
+    margin:50PX 0px
+    
+}
+.parrafoDeQuienesSomos{
+
+}
+.contenedorFoto{
+border-color: black;
+background-color: bisque;
+height: 400px;
+margin:10px 10px;
+}
+/* termina quienes somos */
+
+
+/* Parte de Galeria*/
+.boxGaleria{
+    width: 100%;
+    height: 700px;
+    background-color: orange;
+    margin:10px 0px 220px 0px;
+    padding: 10px 0px 20px 50px;
+}
+
+.imagenGaleria{
+    width: 450px;
+    height: 300px;
+}
+
+/*Footer*/
+#pieDePagina{
+    display: flex;
+    
+}
+.contenedorFooter__imagen{
+    width: 50px;
+    height: 50px;
+    margin: 5px 0px 50px 20px;
+    padding: 0px 100px 0px 100px;
+}
+
+
+
+.contenedorFooter{
+    width: 100%;
+    justify-content: center;
+    background-color: orange;
+   display: flex;
+   
+}
+
+li{
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+
+/* grid */
+.grilla__item{
+    background-color: orange;
+    border:solid 1px black;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grilla{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3,200px);
+ /*    gap:10px 30px ; */
+    height: 100vh;
+
+}
+
+.item1{
+    /* fila inicio/columna inicio/ fila fin/ columna fin */
+    /* 1/1/3/4 */
+    grid-column: 1/span 2;
+    grid-row: 1/span 3;
+}
+
+.layout{
+    display: grid;
+    grid-template-areas:
+    "header header header header"
+    "header header header header"
+    "main main main aside"
+    "main main main aside"
+    "main main main aside"
+    "main main main aside"
+    "main main main aside"
+    "footer footer footer footer"
+
+
+    ;
+}
+
+
+.encabezado{
+    grid-area: header;
+    background-color: azure;
+}
+.principal{
+    grid-area: main;
+    background-color: blue;
+
+}
+.costado{
+    grid-area: aside;
+    background-color: aqua;
+}
+.pie{
+    grid-area: footer;
+    background-color: blueviolet;
+
+}
+#tituloGrid{
+    display: flex;
+}
+
+   
+
+
+
